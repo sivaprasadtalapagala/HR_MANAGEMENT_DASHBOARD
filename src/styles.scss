@@ -1,1 +1,19 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#wrapper {
+  min-height: 100vh;
+}
+
+.card {
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
 /* You can add global styles to this file, and also import other style files */

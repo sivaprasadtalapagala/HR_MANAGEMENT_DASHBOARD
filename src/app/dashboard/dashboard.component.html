@@ -1,0 +1,39 @@
+<div class="row mb-4">
+  <div class="col-md-3" *ngFor="let stat of stats">
+    <div class="card shadow-sm p-3">
+      <h6>{{ stat.label }}</h6>
+      <h3>{{ stat.value }}</h3>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="card p-3">
+      <h5>Performance</h5>
+      <div style="height: 200px; background: #f8f9fa;"></div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card p-3">
+      <h5>Recent Activity</h5>
+      <ul>
+        <li *ngFor="let item of recentActivity">{{ item }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="card mt-4 p-3">
+  <h5>Employee Table</h5>
+  <table class="table">
+    <thead>
+      <tr><th>Name</th><th>Position</th><th>Status</th></tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employees">
+        <td>{{ emp.name }}</td>
+        <td>{{ emp.position }}</td>
+        <td>{{ emp.status }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
